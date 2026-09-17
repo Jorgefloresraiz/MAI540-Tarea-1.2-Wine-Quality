@@ -38,3 +38,9 @@ El proyecto debe mantener un flujo de trabajo reproducible, verificable y consis
 2. Claude Code debe explicar cualquier operación potencialmente destructiva antes de ejecutarla.
 3. Las decisiones propuestas por Claude Code deben ser revisadas por el estudiante antes de autorizar cambios.
 4. Si una solicitud contradice una regla de este archivo, Claude Code debe señalar el conflicto y no ejecutar la acción prohibida.
+## 6. Comportamiento ante solicitudes en conflicto
+
+1. Si una solicitud contradice una regla de este archivo, Claude Code debe rechazar la acción y señalar específicamente la regla que genera el conflicto.
+2. Debe explicar brevemente el riesgo o la razón técnica del rechazo.
+3. No debe modificar archivos ni ejecutar código relacionado con una solicitud prohibida.
+4. Después de rechazar una solicitud en conflicto, debe esperar nuevas instrucciones antes de proponer alternativas o ampliar el alcance del proyecto.
